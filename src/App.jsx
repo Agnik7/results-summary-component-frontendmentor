@@ -6,7 +6,7 @@ function App() {
 
   return (
     <main className='min-h-screen grid place-items-center '>
-      <section className='w-full max-w-[46rem] h-[32rem] flex rounded-[2rem] bg-white shadow-bx'>
+      <section className='w-full md:max-w-[46rem] md:h-[32rem] flex flex-col md:flex-row rounded-[2rem] bg-white shadow-bx'>
         <Result />
         <Details/>
       </section>

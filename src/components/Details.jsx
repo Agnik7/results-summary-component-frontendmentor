@@ -3,8 +3,8 @@ import data from '../data.json';
 import Tabs from './Tabs';
 export default function Details() {
   return (
-    <div className='w-full max-w-[23rem] p-[2.5rem] flex flex-wrap'>
-        <h2 class="w-full mb-[0.2rem] font-hanken font-bold text-[1.5rem] text-neutral-dark-gray-blue">Summary</h2>
+    <div className='w-full md:max-w-[23rem] p-[2.5rem] flex flex-wrap'>
+        <h2 className="w-full mb-[0.2rem] font-hanken font-bold text-[1.5rem] text-neutral-dark-gray-blue">Summary</h2>
         {data.map((item, index)=>(
             <Tabs key={index} category ={item.category} score={item.score} icon={item.icon} />
         ))}
