@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-export default function Tabs({category,score,icon}) {
+export default function Tabs({category,score,icon, index, icons}) {
     const [categoryClass, setCategoryClass] = useState('');
     useEffect(()=>{
         if(category === 'Reaction')
@@ -14,7 +14,7 @@ export default function Tabs({category,score,icon}) {
   return (
     <section className='w-full h-fit p-[1rem] mt-[1.2rem] flex justify-between rounded-lg bg-neutral-light-lavender bg-opacity-[0.3]'>
         <div className='flex items-center'>
-            <img src={icon} alt="Icon" />
+            <img src={icons[index]} alt="Icon" />
             <p className={categoryClass}>{category}</p>
         </div>
         <div className='flex items-center'>
