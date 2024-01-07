@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css';
-
+import Result from './components/Result';
+import Details from './components/Details';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    </>
+    <main className='min-h-screen grid place-items-center '>
+      <section className='w-full max-w-[46rem] h-[32rem] flex rounded-[2rem] bg-white shadow-bx'>
+        <Result />
+        <Details/>
+      </section>
+    </main>
   )
 }
 

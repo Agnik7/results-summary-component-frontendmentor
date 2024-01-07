@@ -21,6 +21,9 @@ export default {
       },
       fontFamily:{
         "hanken": ["Hanken Grotesk", "sans-serif"]
+      },
+      boxShadow:{
+        "bx": "1rem 1rem 5rem -25px rgba(0, 0, 0, 0.15)"
       }
     },
   },
